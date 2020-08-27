@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch, RouteProps } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import RouterViews from "./routerConfig";
+import { ROUTERCONFIG } from "../types/thirdParty/router";
 
 class ReactRouter extends Component {
   render() {
@@ -8,7 +9,8 @@ class ReactRouter extends Component {
       <Router basename="/reactDemo">
         {/* <div>这是路由页面</div> */}
         <Switch>
-          {RouterViews.map((item: RouteProps, idx: number) => {
+          {RouterViews.map((item: ROUTERCONFIG.ROUTERITEM, idx: number) => {
+            // return <Route key={idx} path={item.path} exact={item.exact} component={item.component} />;
             return <Route key={idx} path={item.path} exact={item.exact} component={item.component} />;
           })}
           {/* 如果上面的Route的路径都没有匹配上，则 <NoMatch>被渲染，我们可以在此组件中返回404或者重定向到首页 */}
