@@ -1,40 +1,60 @@
-@import "./variable.scss","./transition.scss";
+@import "./variable.scss", "./transition.scss";
 
-html,body {
-    width: 100%;
-    background: $baseBgColor;
-    line-height: normal;
-    font: {
-        family: "Open Sans", "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft Yahei", sans-serif;
-        size: $baseFontSize;
-        weight: normal;
-    }
-}
-
-html,body,div,p,span,ol,ul,img,input,button,textarea,h1,h2,h3,h4,h5,h6 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html,
+body {
+  width: 100%;
+  background: $baseBgColor;
+  line-height: normal;
+  font: {
+    family: "Open Sans", "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft Yahei", sans-serif;
+    size: $baseFontSize;
+    weight: normal;
+  }
 }
 
-a:link,a:hover {
-    text-decoration: none;
-}
-ol,ul {
-    list-style: none;
-}
-input,button,textarea {
-    outline: none;
-    border: none;
-    background-color: transparent;
-}
-.hidden{
-    visibility: hidden;
-}
-.color-system{
-    color:$systemFontColor
-}
+// html,
+// body,
+// div,
+// p,
+// span,
+// ol,
+// ul,
+// img,
+// input,
+// button,
+// textarea,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
 
+a:link,
+a:hover {
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+// input,
+// button,
+// textarea {
+//   outline: none;
+//   border: none;
+//   background-color: transparent;
+// }
+.hidden {
+  visibility: hidden;
+}
+.color-system {
+  color: $systemFontColor;
+}
 
 @import "./layout.scss";
 @import "./global.scss";
